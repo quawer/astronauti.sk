@@ -1,0 +1,1 @@
+# astronauti.sk
