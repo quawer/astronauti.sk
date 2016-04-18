@@ -271,17 +271,15 @@ main > section {
         -ms-transition: all 0.8s ease 0s;
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
-
-    background-color: rgba(249, 152, 78, 0.4)) !important;
     padding: 5px 0;
 }
-
 #navigation.animated-header {
     padding: 20px 0;
 }
 
 h1.navbar-brand {
     font-size: 20px;
+    color: #fff !important;
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
@@ -291,6 +289,7 @@ h1.navbar-brand {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
+    background-color: rgba(249, 152, 78, 0.4)) !important;
 }
 
 
