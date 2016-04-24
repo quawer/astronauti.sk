@@ -28,13 +28,12 @@
 .nav-arrows span {
 	position: absolute;
 	z-index: 2000;
-	top: 50%;
-	width: 40px;
-	height: 40px;
-	border: 8px solid #ddd;
-	border: 8px solid rgba(150,150,150,0.4);
+	top: 60%;
+	width: 20px;
+	height: 20px;
+	background: rgba(150,150,150,0.4);
 	text-indent: -90000px;
-	margin-top: -40px;
+	margin-top: -20px;
 	cursor: pointer;
 	
 	-webkit-transform: rotate(45deg);
@@ -45,7 +44,7 @@
 }
 
 .nav-arrows span:hover {
-	border-color: rgba(150,150,150,0.9);
+	background: rgba(150,150,150,1);
 }
 
 .nav-arrows span.nav-arrow-prev {
@@ -61,15 +60,14 @@
 }
 
 #nav-arrows > a {
-  border: 1px solid #fff;
+  background: #f9984e;
   color: #fff;
   display: block;
-  height: 60px;
-  line-height: 76px;
+  height: 40px;
   position: absolute;
   text-align: center;
-  top: 50%;
-  width: 60px;
+  top: 60%;
+  width: 40px;
   z-index: 20;
   margin-top: -30px;
 
@@ -89,8 +87,11 @@
 }
 
 #nav-arrows > a.sl-next:hover {
-	background-color: #009EE3;
-	border-color: #009EE3;
+	background-color: #F9A362;
+	color: #fff;
+}
+#nav-arrows > a.sl-prev:hover {
+	background-color: #F9A362;
 	color: #fff;
 }
 

@@ -16,9 +16,10 @@ $(function() {
 
     var Page = (function() {
 
-        var $navArrows = $( '#nav-arrows' ),
+        var //$navArrows = $( '#nav-arrows' ),
             $nav = $( '#nav-dots > span' ),
             slitslider = $( '#slider' ).slitslider( {
+                autoplay: true,
                 onBeforeChange : function( slide, pos ) {
 
                     $nav.removeClass( 'nav-dot-current' );
@@ -107,7 +108,7 @@ $(document).ready(function(){
             $(".navbar-brand a").css("color","#fff");
             $("#navigation").removeClass("animated-header");
         } else {
-            $(".navbar-brand a").css("color","inherit");
+            $(".navbar-brand a").css("color","fff");
             $("#navigation").addClass("animated-header");
         }
     });

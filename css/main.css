@@ -78,7 +78,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #009EE3;
+    background-color: #F9984E;
 }
 
 /* Sweep To Right */
@@ -148,7 +148,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #009EE3;
+	color: #F9984E;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -179,7 +179,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #009ee3;
+    border-bottom: 1px solid #F9984E;
     content: "";
     display: block;
     left: 45%;
@@ -339,10 +339,12 @@ h1.navbar-brand {
     left: 0;
     min-height: 100%;
     position: absolute;
-    text-align: center;
     top: 0;
     width: 100%;
     z-index: 11;
+    box-sizing: border-box !important;
+    padding: 5%;
+    taxt-align: left !important;
 }
 
 .slide-caption .caption-content {
@@ -485,14 +487,14 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center #009ee3;
+    background: url("../img/right.png") no-repeat scroll center center #F9984E;
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center #009ee3;
+    background: url("../img/left.png") no-repeat scroll center center #F9984E;
     height: 50px;
     width: 50px;
     left: 0;
@@ -503,7 +505,7 @@ h1.navbar-brand {
 ==================================================================*/
 
 #about {
-    background-color: #009EE3;
+    background-color: #455A6E;
     color: #fff;
 }
 
@@ -583,9 +585,9 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #009ee3;
+    border: 3px solid #F9984E;
     margin-bottom: 20px;
-    color: #009ee3;
+    color: #F9984E;
 }
 
 .service-icon i {
@@ -682,7 +684,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color: #009EE3;
+    background-color: #F9984E;
     color: #fff;
 }
 
@@ -825,7 +827,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #009EE3;
+    background-color: #F9984E;
     color: #fff;
 }
 
@@ -874,7 +876,7 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #009EE3;
+    background-color: #F9984E;
 }
 
 .price-table.featured ul li:last-child a,
@@ -929,8 +931,8 @@ ul.external li a:hover {
 }
 
 .social-button li a:hover {
-    color: #008ECC;
-    border: 2px solid #008ECC;
+    color: #F9984E;
+    border: 2px solid #F9984E;
 }
 
 
@@ -969,7 +971,7 @@ textarea.form-control {
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #008ecc;
+    border-bottom: 1px solid #F9984E;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -1111,7 +1113,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color: #009EE3;
+    color: #F9984E;
 }
 
 .footer-content > p {
@@ -1229,7 +1231,7 @@ textarea.form-control {
 
 /*navigation*/
     .navbar-inverse .navbar-toggle {
-        border-color: #fff;
+        border-color: none;
     }
 
     .navbar-inverse .navbar-toggle:hover,
