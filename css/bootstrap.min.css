@@ -1163,7 +1163,7 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #fff;
     text-decoration: none
 }
 
@@ -5079,7 +5079,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 .navbar-inverse {
-    background-color: #f9984e !important;
+    background-color: #F67513;
     border-color: none;
 }
 
@@ -5127,7 +5127,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    background-color: #333
+    background-color: #F67513 !important;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -5804,7 +5804,7 @@ a.thumbnail.active {
 
 .media-left,
 .media>.pull-left {
-    padding-right: 10px
+    padding-bottom: 20px;
 }
 
 .media-left,

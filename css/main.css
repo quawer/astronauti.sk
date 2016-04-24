@@ -65,8 +65,7 @@ main > section {
 }
 
 .btn-blue {
-    background-color: rgba(0,158,227, 0.78);
-    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
+    background-color: #F67513;
     padding: 15px 55px;
     color: #fff;
 }
@@ -78,7 +77,7 @@ main > section {
 }
 
 .bg-blue {
-    background-color: #F9984E;
+    background-color: #F67513;
 }
 
 /* Sweep To Right */
@@ -148,7 +147,7 @@ main > section {
 }
 
 .btn-effect:hover, .btn-effect:focus, .btn-effect:active {
-	color: #F9984E;
+	color: #F67513;
 }
 
 .btn-effect:hover:before, .btn-effect:focus:before, .btn-effect:active:before {
@@ -179,7 +178,7 @@ main > section {
 }
 
 .sec-title h2:after {
-    border-bottom: 1px solid #F9984E;
+    border-bottom: 4px solid #F67513;
     content: "";
     display: block;
     left: 45%;
@@ -230,7 +229,7 @@ main > section {
 .sk-rotating-plane {
   width: 40px;
   height: 40px;
-  background-color: #F9984E;
+  background-color: #F67513;
   margin: 40px auto;
   -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
           animation: sk-rotatePlane 1.2s infinite ease-in-out; }
@@ -275,9 +274,12 @@ main > section {
 }
 #navigation.animated-header {
     padding: 20px 0;
+    background: transparent;
 }
 
 h1.navbar-brand {
+    display: inline-block;
+    vertical-align: middle;
     font-size: 20px;
     color: #fff !important;
     font-weight: 700;
@@ -285,13 +287,25 @@ h1.navbar-brand {
     text-transform: uppercase;
 }
 
+.logoAstronauts{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    background: url('../img/astronatuti_logo.png');
+    background-size: contain;
+    float: left;
+}
+
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
-    background-color: rgba(249, 152, 78, 0.4)) !important;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #F67513 !important;
+}
 
 /*=================================================================
 	Home Slider
@@ -487,14 +501,14 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center #F9984E;
+    background: url("../img/right.png") no-repeat scroll center center #F67513;
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center #F9984E;
+    background: url("../img/left.png") no-repeat scroll center center #F67513;
     height: 50px;
     width: 50px;
     left: 0;
@@ -513,6 +527,12 @@ h1.navbar-brand {
     color: #fff;
     margin: 0 0 35px;
     text-transform: uppercase;
+}
+
+#eventsframe{
+    border: 2px solid #fff !important;
+    height: 100%;
+    width: 100%;
 }
 
 #about .welcome-block h3 {
@@ -585,9 +605,9 @@ h1.navbar-brand {
 }
 
 .service-item:hover .service-icon {
-    border: 3px solid #F9984E;
+    border: 3px solid #F67513;
     margin-bottom: 20px;
-    color: #F9984E;
+    color: #F67513;
 }
 
 .service-icon i {
@@ -684,7 +704,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-    background-color: #F9984E;
+    background-color: #F67513;
     color: #fff;
 }
 
@@ -730,7 +750,7 @@ ul.external li a:hover {
 }
 
 #testimonials .overlay {
-    background-color: rgba(15,155,224, 0.78);
+    background-color: rgba(20, 9, 1, 0.78);
     padding: 70px 0 40px;
 }
 
@@ -827,7 +847,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-    background-color: #F9984E;
+    background-color: #F67513;
     color: #fff;
 }
 
@@ -876,7 +896,7 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-    background-color: #F9984E;
+    background-color: #F67513;
 }
 
 .price-table.featured ul li:last-child a,
@@ -890,7 +910,7 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(../img/parallax/follow.jpg);
     padding: 0;
 }
 
@@ -931,8 +951,8 @@ ul.external li a:hover {
 }
 
 .social-button li a:hover {
-    color: #F9984E;
-    border: 2px solid #F9984E;
+    color: #F67513;
+    border: 2px solid #F67513;
 }
 
 
@@ -971,7 +991,7 @@ textarea.form-control {
 }
 
 .contact-details h3 {
-    border-bottom: 1px solid #F9984E;
+    border-bottom: 1px solid #F67513;
     font-weight: 700;
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -1113,7 +1133,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-    color: #F9984E;
+    color: #F67513;
 }
 
 .footer-content > p {
@@ -1172,7 +1192,7 @@ textarea.form-control {
     .recent-works {
         margin-bottom: 50px;
     }
-
+    
     .service-item {
         margin-bottom: 50px;
     }

@@ -1,4 +1,17 @@
 /* ========================================================================= */
+/*	Instagram init
+/* ========================================================================= */
+$("document").ready(function(){
+var feed = new Instafeed({
+        clientId: 'e1cced6153d04cde9c11b634f888459e',
+        userId: '3167074670',
+        accessToken: '3167074670.1677ed0.ce711689e2574d6797eb98fa5b1fe380',
+        template: '<li class="animation" href="{{link}}"><img src="{{image}}" /></li>'
+    });
+    feed.run();
+});
+
+/* ========================================================================= */
 /*	Preloader
 /* ========================================================================= */
 
@@ -36,19 +49,19 @@ $(function() {
             initEvents = function() {
 
                 // add navigation events
-                $navArrows.children( ':last' ).on( 'click', function() {
+                /*$navArrows.children( ':last' ).on( 'click', function() {
 
                     slitslider.next();
                     return false;
 
-                } );
+                } );*/
 
-                $navArrows.children( ':first' ).on( 'click', function() {
+                /*$navArrows.children( ':first' ).on( 'click', function() {
                     
                     slitslider.previous();
                     return false;
 
-                } );
+                } );*/
 
                 $nav.each( function( i ) {
                 
@@ -105,10 +118,8 @@ $(document).ready(function(){
 	
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
-            $(".navbar-brand a").css("color","#fff");
             $("#navigation").removeClass("animated-header");
         } else {
-            $(".navbar-brand a").css("color","fff");
             $("#navigation").addClass("animated-header");
         }
     });
@@ -182,7 +193,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-	    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+	    var myLatLng = new google.maps.LatLng(48.1591728,17.1019071);
 
 	    var mapOptions = {
 	        zoom: 15,
@@ -199,7 +210,7 @@ function init() {
         styles: [{
             featureType: 'water',
             stylers: [{
-                color: '#46bcec'
+                color: '#F67513'
             }, {
                 visibility: 'on'
             }]
@@ -254,9 +265,9 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.402789, 91.822156),
+        position: new google.maps.LatLng(48.1591728,17.1019071),
         map: map,
-		icon: 'img/icons/map-marker.png',
+		icon: 'img/icons/astronatuti_logo.png',
     });
 }
 
