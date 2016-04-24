@@ -1,6 +1,108 @@
 /* ========================================================================= */
 /*	Instagram init
 /* ========================================================================= */
+var results = [];
+var move = "420px";
+var sliderLimit = -750;
+
+$("document").ready(function(){
+	
+	var location = $(location).attr('hostname');
+	$.ajax({ 'url' : 'https://api.concertian.com/users/events/domain',
+		  'method' : 'POST',
+			'data' : {
+			 		 'domain' : 'quawer.com'
+		 		     },
+	  'contentType' : "application/x-www-form-urlencoded",
+		  'success' : function (json){
+			  if(json != null){
+				appendResults(json);
+                  if(json.success = false){
+                      emptyelements();
+                  }
+			  }
+			  else{
+				emptyelements();  
+			  }
+	  	},
+	  	'error': function(error){
+	  		console.log('Error. ' + error);
+			emptyelements(); 
+	  	}
+    });
+});	
+//Json success
+function appendResults(json){
+	$("#eventsframe").append('<div id="pluginBoxConcertian">'+
+					 	'<div id="pluginOuterConcertian"></div>'+
+						 '<div class="concertianLogo">'+
+					 		'<div class="logo"></div>'+
+						 '</div>'+
+						 '<div id="left"></div>'+
+						 '<div id="right"></div>'+
+					 '</div>');
+	for(var i = 0; i < json.events.length; i++){
+		var value = json.events[i];
+        results[length + i] = value;
+		var arr = value.stringDate.split('-');
+	
+	var pluginresults = 
+			'<div class="resultElementConcertian">' +
+				'<div class="firstPartConcertian">'+arr[1]+'<br>'+arr[2]+'</div>' +
+				'<div class="secondPartConcertian">' +
+					'<img class="secondPartImgConcertian"' +
+						  'src="'+value.imgUrl+'">' +
+				'</div>' +
+				'<div class="thirdPartConcertian">'+value.eventName+'</div>' +
+				'<div class="forthPartConcertian">' +
+				'<div class="pluginFormSubmitConcertian">' +
+					'<div class="pluginFormSubmitButtonConcertian">VSTUPENKY<input type="hidden" class="pluginFormSubmitHiddenConcertian" value="'+value.id+'"/></div>' +
+				'</div>' +
+				'</div>' +
+			'</div>' +
+		'</div>';
+	$("#pluginOuterConcertian").append(pluginresults);
+}
+	//Concertian linking
+	$(".logo").on('click', function(){
+		window.location = "https://manager.concertian.com";
+	});
+	$(".pluginFormSubmitButtonConcertian").on('click', function(){
+		var eventID = $(this).find(".pluginFormSubmitHiddenConcertian").val();
+		var linkUrl = 'https://concertian.com/share.html?' + eventID;
+
+		window.location = linkUrl;
+		event.preventDefault();
+	});
+	
+	// Scroll handeler
+	$("#right").mouseenter(function(){
+    	var currentPosition = $("#pluginOuterConcertian").position().left;
+		if (currentPosition >= sliderLimit){
+			$("#pluginOuterConcertian").stop(false,true).animate({left:"-="+move},{ duration: 800});
+										   }
+	});
+
+	$("#left").mouseenter(function(){
+		var currentPosition = $("#pluginOuterConcertian").position().left;
+		if (currentPosition < 0) $("#pluginOuterConcertian").stop(false,true).animate({left:"+="+move},{ duration: 800});
+
+	});
+}
+// Json false
+function emptyelements(){
+	$("#eventsframe").append('<div id="pluginBoxConcertian">'+
+						'<div class="concertianLogo">'+
+					 		'<div class="logo"></div>'+
+						'</div>'+
+					    '<div class="emptyTextConcertian">Žiadne podujatia</div>'+
+					 '</div>');
+}
+
+function get_hostname(url) {
+    var m = url.match(/^http:\/\/[^/]+/);
+    return m ? m[0] : null;
+}
 $("document").ready(function(){
 var feed = new Instafeed({
         clientId: 'e1cced6153d04cde9c11b634f888459e',

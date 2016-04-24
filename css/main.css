@@ -547,7 +547,7 @@ h1.navbar-brand {
 }
 
 #about .message-body {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
     margin-bottom: 70px;
 }
@@ -816,6 +816,13 @@ ul.external li a:hover {
     color: #fff;
 }
 
+.branding{
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    text-align: center;
+}
+
 .price-table {
     border: 1px solid #e3e3e3;
 }
@@ -924,6 +931,7 @@ ul.external li a:hover {
     padding: 0;
     list-style: none;
     text-align: center;
+    margin-left: 5%;
 }
 
 .social-button li {
