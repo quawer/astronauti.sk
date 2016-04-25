@@ -244,7 +244,7 @@ $(document).ready(function(){
 	$("#works, #testimonial").owlCarousel({	 
 		navigation : true,
 		pagination : false,
-		slideSpeed : 700,
+		slideSpeed : 1100,
 		paginationSpeed : 400,
 		singleItem:true,
 		navigationText: ["<i class='fa fa-angle-left fa-lg'></i>","<i class='fa fa-angle-right fa-lg'></i>"]
