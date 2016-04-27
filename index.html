@@ -8,19 +8,19 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>astronauti - working space for freelancers</title>		
+        <title>astronauti - working space for freelancers</title>
 		<!-- Meta Description -->
         <meta name="description" content="Coworking space for real freelancers">
         <meta name="keywords" content="web developer, web designer, graphic, ideamaker, team leader, team, startup, idea, coworking, paid working space">
-		
+
 		<!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 		<!-- CSS
 		================================================== -->
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		
+
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- bootstrap.min -->
@@ -40,9 +40,21 @@
         <script src="js/modernizr-2.6.2.min.js"></script>
 
     </head>
-	
-    <body id="body">
 
+    <body id="body">
+      <!-- popup 
+      <span id="popup">
+        <span class="container">
+          <span class="popupMainText">Všetko pre Vás pripravujeme</span>
+          <span class="popupSubText">Napíšte nám na twitter, facebook alebo helpdesk</span>
+          <span>
+            <ul class="social-button">
+              <li class="wow animated zoomIn"><a href="https://www.facebook.com/Astronauti-267606776906498/"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+              <li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com/astronauti_sk"><i class="fa fa-twitter fa-2x"></i></a></li>
+            </ul>
+          </span>
+        </span>
+      </span> -->
 		<!-- preloader -->
 		<div id="preloader">
             <div class="loder-box">
@@ -65,7 +77,7 @@
 						<span class="icon-bar"></span>
                     </button>
 					<!-- /responsive nav button -->
-					
+
 					<!-- logo -->
                     <span class="centerLogo">
                         <span class="logoAstronauts"></span>
@@ -81,28 +93,28 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">Domov</a></li>
                         <li><a href="#service">Astronauti</a></li>
-                        <li><a href="#portfolio">Rezervovať</a></li>
+                        <li><a href="#price">Rezervovať</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
-				
+
             </div>
         </header>
         <!--
         End Fixed Navigation
         ==================================== -->
-		
+
 		<main class="site-content" role="main">
-		
+
         <!--
         Home Slider
         ==================================== -->
-		
+
 		<section id="home-slider">
             <div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
-				
+
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
 						<div class="bg-img bg-img-1"></div>
@@ -112,33 +124,33 @@
                                 <h2 class="animated fadeInDown">Si autorom blogu či prispievaš článkami?</h2>
                                 <span class="animated fadeInDown">Potrebuješ kretívny priestor na prácu
 </span>
-                                <a href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
+                                <a id="doReservation" href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
                             </div>
                         </div>
-						
+
 					</div>
-					
+
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-					
+
 						<div class="bg-img bg-img-2"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2>Programátor na voľnej nohe?</h2>
                                 <span>Potrebuješ kretívny priestor na prácu</span>
-                                <a href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
+                                <a id="doReservation" href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
                             </div>
                         </div>
-						
+
 					</div>
-					
+
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						
+
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2>Tím, ktorý sa vidal na cestu zmeniť svet?</h2>
                                 <span>Potrebuješ kretívny priestor na prácu</span>
-                                <a href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
+                                <a id="doReservation" href="#" class="btn btn-blue btn-effect">Book a workdesk</a>
                             </div>
                         </div>
 
@@ -146,13 +158,13 @@
 
 				</div><!-- /sl-slider -->
 
-                <!-- 
+                <!--
                 <nav id="nav-arrows" class="nav-arrows">
                     <span class="nav-arrow-prev">Previous</span>
                     <span class="nav-arrow-next">Next</span>
                 </nav>
                 -->
-                
+
                 <!--<nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
                     <a href="javascript:;" class="sl-prev">
                         <i class="fa fa-angle-left fa-3x"></i>
@@ -161,7 +173,7 @@
                         <i class="fa fa-angle-right fa-3x"></i>
                     </a>
                 </nav>-->
-                
+
 
 				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
 					<span class="nav-dot-current"></span>
@@ -171,11 +183,11 @@
 
 			</div><!-- /slider-wrapper -->
 		</section>
-		
+
         <!--
         End Home SliderEnd
         ==================================== -->
-			
+
 			<!-- about section -->
 			<section id="about" >
 				<div class="container">
@@ -184,16 +196,16 @@
 							<div class="recent-works">
 								<h3>Eventy</h3>
 								<div id="eventsframe">
-                                    
+
                                 </div>
 							</div>
 						</div>
 						<div class="col-md-4 col-md-offset-1 wow animated fadeInRight">
 							<div class="welcome-block">
-								<h3>Vitaj medzi astronautami!</h3>								
+								<h3>Vitaj medzi astronautami!</h3>
 						     	 <div class="message-body">
 									<img src="img/Me.jpg" class="pull-left" alt="member">
-						       		<p>Projekt astronauti sme založili v spolupráci s realitnou  agentúrou volnereality.net a to pre zvýšený záujem mladých podnikavých jedincov, ktorý hľadajú <strong>priestor na realizovanie projektov</strong> „z vlastnej garáže“, no nemôžu si dovoliť platiť administratívne priestory. <hr>Takýmto spôsobom dnešný freelancer nie len ušetrí, ale sa mu otvorí aj možnosť zaradiť sa do komunity rovnako zmýšľajúcich ľudí. Či si <strong>programátor, grafik alebo copywriter</strong> u nás sú dvere otvorené pre každého. Daj nám šancu – príď nás navštíviť a čo vieš, možno natrafíš na príležitosť, na ktorú dlho čakáš.<br><strong>Doma na príležitosť nenatrafíš..</strong></p>
+						       		<p>Projekt astronauti sme založili v spolupráci s realitnou  agentúrou volnereality.net a to pre zvýšený záujem mladých podnikavých jedincov, ktorý hľadajú priestor na realizovanie projektov „z vlastnej garáže“, no nemôžu si v začiatkoch dovoliť platiť administratívne priestory. <hr>Takýmto spôsobom dnešný freelancer nie len ušetrí, ale sa mu otvorí aj možnosť zaradiť sa do komunity rovnako zmýšľajúcich ľudí. Či si programátor, grafik alebo copywriter u nás sú dvere otvorené pre každého. Daj nám šancu – príď nás navštíviť a čo vieš, možno natrafíš na príležitosť, na ktorú dlho čakáš.<br>Doma na príležitosť nenatrafíš..</p>
 						     	 </div>
 						    </div>
 						</div>
@@ -201,13 +213,13 @@
 				</div>
 			</section>
 			<!-- end about section -->
-			
-			
+
+
 			<!-- Service section -->
 			<section id="service">
 				<div class="container">
 					<div class="row">
-						
+
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 							<div class="service-item">
 								<div class="service-icon">
@@ -217,7 +229,7 @@
 								<p>Vyberieš si pracovný stôl a tvoj sen môže odštartovať. S nepretržitým prístupom je len na tebe, kedy pracuješ. </p>
 							</div>
 						</div>
-					
+
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
 							<div class="service-item">
 								<div class="service-icon">
@@ -227,7 +239,7 @@
 								<p>V takomto pracovnom kolektíve je o zábavu postarané a nehrozí, že s niekým neprídeš na spoločnú reč.</p>
 							</div>
 						</div>
-					
+
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
 							<div class="service-item">
 								<div class="service-icon">
@@ -237,84 +249,84 @@
 								<p>Máš záujem sa priučiť a rozšíriť obzory? Nevieš ako správne na život freelancera? Naučiť sa to je už len otázka toho či chceš.</p>
 							</div>
 						</div>
-					
+
 						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
 							<div class="service-item">
 								<div class="service-icon">
 									<i class="fa fa-clock-o fa-3x"></i>
                                 </div>
 								<h3>Non-stop<br></h3>
-								<p>Otvorený 24/7 s vlastným prístupom sa už nemusíš obmedzovať na otváracie hodiny kaviarne v susedstve.</p>							
+								<p>Otvorený 24/7 s vlastným prístupom sa už nemusíš obmedzovať na otváracie hodiny kaviarne v susedstve.</p>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 			</section>
 			<!-- end Service section -->
-			
+
 			<!-- portfolio section -->
 			<section id="portfolio">
 				<div class="container">
 					<div class="row">
-					
+
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Ako to u nás vyzerá?</h2>
 							<p>sleduj náš instagram</p>
 						</div>
-						
+
 
 						<ul id="instafeed" class="project-wrapper wow animated fadeInUp">
-							
+
 						</ul>
-						
+
 					</div>
 				</div>
 			</section>
 			<!-- end portfolio section -->
-			
+
 			<!-- Testimonial section -->
 			<section id="testimonials" class="parallax">
 				<div class="overlay">
 					<div class="container">
 						<div class="row">
-						
-							<div class="sec-title text-center white wow animated fadeInDown">
-								<h2>What people say</h2>
-							</div>
-							
+
 							<div id="testimonial" class=" wow animated fadeInUp">
 								<div class="testimonial-item text-center">
-									<img src="img/member-1.jpg" alt="Our Clients">
+									<img src="img/support/logo2.jpg" alt="Our Clients">
 									<div class="clearfix">
-										<span>Katty Flower</span>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+										<span>volnereality</span>
+										<p>Sme občianske združenie zmerané na rozvoj a podporu talentov.
+Podporujeme integráciu mladých ľudí do spoločnosti, začínajúcim jednotlivcom aj kolektívom ponúkame pomoc pri rozbehnutí svojich nápadov a aktivít.
+Spoločnými silami a prostriedkami pomáhame rozbehnúť dobré nápady.
+Ak viete čo by ste chceli robiť, nečakajte a kontaktujte nás.
+Dobrý nápad môže mať každý, v každom obore, profesii, ....</p>
 									</div>
 								</div>
 							</div>
-						
+
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- end Testimonial section -->
-			
+
 			<!-- Price section -->
 			<section id="price">
 				<div class="container">
 					<div class="row">
-					
+
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Členstvo</h2>
 						</div>
-						
+
                         <div class="col-md-7 wow animated fadeInUp" data-wow-delay="0.4s">
                             <span class="branding">
                                 <img class="img" src="img/astronatuti_logo.png">
                             </span>
                             <p style="box-sizing: border-box; padding: 2%;">Platba prebieha platobnou kartou cez platobnú bránu Braintree. Platí sa za obdobie jedného mesiaca odo dňa uskutočnenia platby. V prípade záujmu o individuálne dohodnutie nás kontaktujte. Viac v obchodných podmienkach. </p>
                         </div>
-						
+
 						<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
 							<div class="price-table featured text-center">
 								<span>Member</span>
@@ -326,72 +338,75 @@
 								<ul>
 									<li>workdesk</li>
 									<li>24/7 access</li>
-									<li><a href="#">Rezervovať</a></li>
+									<li><a id="doReservation" href="#">Rezervovať</a></li>
 								</ul>
 							</div>
                         </div>
-        
+
 					</div>
 				</div>
 			</section>
 			<!-- end Price section -->
-			
+
 			<!-- Social section -->
 			<section id="social" class="parallax">
 				<div class="overlay">
 					<div class="container">
 						<div class="row">
-						
+
 							<div class="sec-title text-center white wow animated fadeInDown">
 								<h2>Sleduj čo je nové</h2>
 							</div>
-							
+
 							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li class="wow animated zoomIn"><a href="https://www.facebook.com/Astronauti-267606776906498/"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com/astronauti_sk"><i class="fa fa-twitter fa-2x"></i></a></li>
 							</ul>
-							
+
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- end Social section -->
-			
+
 			<!-- Contact section -->
 			<section id="contact" >
 				<div class="container">
 					<div class="row">
-						
+
 						<div class="sec-title text-center wow animated fadeInDown">
 							<h2>Podporujú nás</h2>
 						</div>
-				
-						<div class="col-md-6 wow animated fadeInRight">
-							<img class="img" src="img/support/volnereality.png">
+
+				    <div class="col-md-6 wow animated fadeInRight">
+							<span class="supporterName">volnereality.net</span>
+              <p>Ako občianské združenie BavexMVTZ</p>
+                            <a href="http://www.volnereality.net/" target="_blank"><img id="volneRsro" class="supporterLogo" src="img/support/logo.png"></a>
 						</div>
-                        <div class="col-md-6 wow animated fadeInRight">
-						  <img class="img" style="margin-top: 8%;" src="img/support/quawer.png">
+            <div class="col-md-6 wow animated fadeInRight">
+						    <span class="supporterName">quawer.com</span>
+                            <a href="http://www.quawer.com" target="_blank"><img id="quawerLogo" class="supporterLogo" src="img/support/quawer-logo.jpg"></a>
 						</div>
-			
+
 					</div>
 				</div>
 			</section>
 			<!-- end Contact section -->
-			
+
 			<section id="google-map">
 				<div id="map-canvas" class="wow animated fadeInUp"></div>
 			</section>
-		
+
 		</main>
-		
+
 		<footer id="footer">
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
 						<div class="footer-social">
 							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+								<li class="wow animated zoomIn"><a href="https://www.facebook.com/Astronauti-267606776906498/"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://twitter.com/astronauti_sk"><i class="fa fa-twitter fa-3x"></i></a></li>
 							</ul>
 						</div>
 						<hr>
@@ -403,7 +418,7 @@
 				</div>
 			</div>
 		</footer>
-		
+
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->

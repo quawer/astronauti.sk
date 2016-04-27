@@ -6,7 +6,7 @@ var move = "420px";
 var sliderLimit = -750;
 
 $("document").ready(function(){
-	
+
 	var location = $(location).attr('hostname');
 	$.ajax({ 'url' : 'https://api.concertian.com/users/events/domain',
 		  'method' : 'POST',
@@ -22,15 +22,15 @@ $("document").ready(function(){
                   }
 			  }
 			  else{
-				emptyelements();  
+				emptyelements();
 			  }
 	  	},
 	  	'error': function(error){
 	  		console.log('Error. ' + error);
-			emptyelements(); 
+			emptyelements();
 	  	}
     });
-});	
+});
 //Json success
 function appendResults(json){
 	$("#eventsframe").append('<div id="pluginBoxConcertian">'+
@@ -45,8 +45,8 @@ function appendResults(json){
 		var value = json.events[i];
         results[length + i] = value;
 		var arr = value.stringDate.split('-');
-	
-	var pluginresults = 
+
+	var pluginresults =
 			'<div class="resultElementConcertian">' +
 				'<div class="firstPartConcertian">'+arr[1]+'<br>'+arr[2]+'</div>' +
 				'<div class="secondPartConcertian">' +
@@ -74,7 +74,7 @@ function appendResults(json){
 		window.location = linkUrl;
 		event.preventDefault();
 	});
-	
+
 	// Scroll handeler
 	$("#right").mouseenter(function(){
     	var currentPosition = $("#pluginOuterConcertian").position().left;
@@ -108,7 +108,9 @@ var feed = new Instafeed({
         clientId: 'e1cced6153d04cde9c11b634f888459e',
         userId: '3167074670',
         accessToken: '3167074670.1677ed0.ce711689e2574d6797eb98fa5b1fe380',
-        template: '<li class="animation" href="{{link}}"><img src="{{image}}" /></li>'
+        template: '<li class="animation" href="{{link}}"><img src="{{image}}" /></li>',
+				resolution: 'low_resolution',
+				id: 'astronauti.sk'
     });
     feed.run();
 });
@@ -146,11 +148,11 @@ $(function() {
             init = function() {
 
                 initEvents();
-                
+
             },
             initEvents = function() {
 
-                // add navigation events
+                //add navigation events
                 /*$navArrows.children( ':last' ).on( 'click', function() {
 
                     slitslider.next();
@@ -159,30 +161,30 @@ $(function() {
                 } );*/
 
                 /*$navArrows.children( ':first' ).on( 'click', function() {
-                    
+
                     slitslider.previous();
                     return false;
 
                 } );*/
 
                 $nav.each( function( i ) {
-                
+
                     $( this ).on( 'click', function( event ) {
-                        
+
                         var $dot = $( this );
-                        
+
                         if( !slitslider.isActive() ) {
 
                             $nav.removeClass( 'nav-dot-current' );
                             $dot.addClass( 'nav-dot-current' );
-                        
+
                         }
-                        
+
                         slitslider.jump( i + 1 );
                         return false;
-                    
+
                     } );
-                    
+
                 } );
 
             };
@@ -198,6 +200,12 @@ $(function() {
 
 
 $(document).ready(function(){
+	/* ========================================================================= */
+	/*	OrderSeat Handler
+	/* ========================================================================= */
+	$("#doReservation").on('click', function(){
+		$("popup").fadeIn();
+	});
 
 	/* ========================================================================= */
 	/*	Menu item highlighting
@@ -217,7 +225,7 @@ $(document).ready(function(){
 			console.log('done scrolling');
 		}
 	});
-	
+
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
             $("#navigation").removeClass("animated-header");
@@ -225,23 +233,23 @@ $(document).ready(function(){
             $("#navigation").addClass("animated-header");
         }
     });
-	
+
 	/* ========================================================================= */
 	/*	Fix Slider Height
-	/* ========================================================================= */	
+	/* ========================================================================= */
 
     // Slider Height
     var slideHeight = $(window).height();
-    
+
     $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 
     $(window).resize(function(){'use strict',
         $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
     });
-	
-	
-	
-	$("#works, #testimonial").owlCarousel({	 
+
+
+
+	$("#works, #testimonial").owlCarousel({
 		navigation : true,
 		pagination : false,
 		slideSpeed : 1100,
@@ -249,8 +257,8 @@ $(document).ready(function(){
 		singleItem:true,
 		navigationText: ["<i class='fa fa-angle-left fa-lg'></i>","<i class='fa fa-angle-right fa-lg'></i>"]
 	});
-	
-	
+
+
 	/* ========================================================================= */
 	/*	Featured Project Lightbox
 	/* ========================================================================= */
@@ -265,15 +273,15 @@ $(document).ready(function(){
 		closeSpeed  : 550,
 
 		closeClick : true,
-			
+
 		beforeShow: function () {
 			this.title = $(this.element).attr('title');
 			this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
 		},
-		
+
 		helpers : {
-			title : { 
-				type: 'inside' 
+			title : {
+				type: 'inside'
 			},
 			overlay : {
 				css : {
@@ -282,7 +290,7 @@ $(document).ready(function(){
 			}
 		}
 	});
-	
+
 });
 
 
@@ -307,7 +315,7 @@ function init() {
 	        scaleControl: false,
 	        draggable: true,
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             featureType: 'water',
@@ -358,7 +366,7 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map-canvas');
 
@@ -380,4 +388,3 @@ var wow = new WOW ({
 	mobile:       false,       // trigger animations on mobile devices (default is true)
 });
 wow.init();
-
