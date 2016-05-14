@@ -13,7 +13,7 @@ $("document").ready(function(){
 			'data' : {
 			 		 'domain' : 'quawer.com'
 		 		     },
-	  'contentType' : "application/x-www-form-urlencoded",
+			'contentType' : "application/x-www-form-urlencoded",
 		  'success' : function (json){
 			  if(json != null){
 				appendResults(json);
@@ -106,11 +106,11 @@ function get_hostname(url) {
 $("document").ready(function(){
 var feed = new Instafeed({
         clientId: 'e1cced6153d04cde9c11b634f888459e',
+				accessToken: '3167074670.1677ed0.ce711689e2574d6797eb98fa5b1fe380',
+				get: 'user',
         userId: '3167074670',
-        accessToken: '3167074670.1677ed0.ce711689e2574d6797eb98fa5b1fe380',
         template: '<li class="animation" href="{{link}}"><img src="{{image}}" /></li>',
 				resolution: 'low_resolution',
-				id: 'astronauti.sk'
     });
     feed.run();
 });

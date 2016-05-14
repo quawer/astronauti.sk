@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="sk" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>astronauti - working space for freelancers</title>
+		<!-- Meta Description -->
+        <meta name="description" content="Coworking space for real freelancers">
+        <meta name="keywords" content="web developer, web designer, graphic, ideamaker, team leader, team, startup, idea, coworking, paid working space">
+
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS
+		================================================== -->
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body id="payment">
+      <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+          <div class="container">
+              <div class="navbar-header">
+                  <!-- responsive nav button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+                  </button>
+        <!-- /responsive nav button -->
+
+        <!-- logo -->
+                  <span class="centerLogo">
+                      <span class="logoAstronauts"></span>
+                      <h1 class="navbar-brand center">
+                          <a href="#body">Astronauti</a>
+                      </h1>
+                  </span>
+        <!-- /logo -->
+              </div>
+
+      <!-- main nav -->
+              <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                  <ul id="nav" class="nav navbar-nav">
+                      <li><a href="#body">Domov</a></li>
+                      <li><a href="#service">Astronauti</a></li>
+                      <li><a href="#price">Rezervovať</a></li>
+                  </ul>
+              </nav>
+      <!-- /main nav -->
+
+          </div>
+      </header>
+      <span class="col-md-6 wow animated fadeInUp">
+        <span id="registrationForm">
+          <form method="POST" action="#" role="form">
+          <div class="form-group">
+            <h2>Predbežná registrácia</h2>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupName">Meno a priezvisko</label>
+            <input id="signupName" type="text" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupEmailagain">Názov spoločnosti</label>
+            <input id="signupEmailagain" type="email" maxlength="50" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="signupPassword">Adresa</label>
+            <input id="signupPassword" type="password" maxlength="25" class="form-control" placeholder="at least 6 characters" length="40">
+          </div>
+          <div class="form-group">
+            <button id="signupSubmit" type="submit" class="btn btn-info btn-blue" style="width: 100%; margin-top: 5%;">Registrovať bez úhrady</button>
+          </div>
+          <p class="form-group">By submiting your application, you agree to our <a href="terms.html">Terms of Use</a> and our <a href="terms.html">Privacy Policy</a>.</p>
+        </form>
+        </span>
+      </span>
+      <span class="col-md-6 wow animated fadeInUp">
+        <span id="paymentForm">
+          <form id="checkout">
+            <span id="payment-form"></span>
+            <input type="hidden" name="price" id="price" val="49">
+            <input type="submit" id="submit" class="btn btn-info btn-blue" value="Uhradiť 49€" style="width: 100%; margin-top: 5%;">
+          </form>
+        </span>
+      </span>
+    </body>
+    <!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+    <!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+      <script src="js/payment.js"></script>
+    </html>
