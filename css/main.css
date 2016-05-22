@@ -1024,17 +1024,13 @@ ul.external li a:hover {
 }
 .supporterLogo{
     display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
     height: auto;
     text-align: center;
     margin-top: 15%;
-}
-#volneRsro{
-    width: 50% !important;
-    margin-left: 25%;
-}
-#quawerLogo{
-    width: 30%;
-    margin-left: 35%;
+    margin-left: 32%;
 }
 /*============================================================
 	Google Maps
@@ -1260,7 +1256,9 @@ ul.external li a:hover {
     body {
         font-size: 14px;
     }
-
+    .supporterName{
+      font-size: 30px;
+    }
     /* --------- POPUP - preparing gateway ------------ */
     #popup {
       position: absolute;
